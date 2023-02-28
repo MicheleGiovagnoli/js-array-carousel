@@ -44,4 +44,13 @@ GENERAL STYLES
  .d-none{
     display: none;
  }
+ .d-block{
+    display: block;
+ }
 
+
+ /*  */
+
+ .btn {
+   cursor: pointer;
+ }

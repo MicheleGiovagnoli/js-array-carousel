@@ -30,6 +30,21 @@ domImageList.innerHTML = containerDinamicImage;
 //aggiungo la classe d-none
 const domDinamicImage = document.getElementsByClassName('image');
 
+let counter = 0;
 
-domDinamicImage.classList.add('d-none');
+domDinamicImage[counter].classList.add('d-block');
+ for(let i = 1; counter < i; i++) {
+    domDinamicImage[counter].classList.add('d-none');
+    counter++;
+ }
+
+
+    
+
+
+
+    
+
+
+
 
