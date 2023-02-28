@@ -27,3 +27,9 @@ for(let i = 0; i < array.length; i++) {
 //inserisco le immagini create dinamicamente all'interno del div image-list nell'html
 domImageList.innerHTML = containerDinamicImage;
 
+//aggiungo la classe d-none
+const domDinamicImage = document.getElementsByClassName('image');
+
+
+domDinamicImage.classList.add('d-none');
+

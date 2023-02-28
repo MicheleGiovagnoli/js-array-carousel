@@ -14,6 +14,7 @@ GENERAL STYLES
 /*************************************************
     STYLES
  *************************************************/
+
  /* CONTAINER */
  .container{
     width: 50vw;
@@ -23,10 +24,12 @@ GENERAL STYLES
     height: 70vh;
     margin-top: 10vh;
  }
+
  /* image list */
  .image-list {
     height: 100%;
  }
+
  /* image */
  .image {
     height: 100%;
@@ -35,6 +38,10 @@ GENERAL STYLES
     object-fit: cover;
     width: 100%;
     height: 100%;
-    
+ }
+
+ /* display */
+ .d-none{
+    display: none;
  }
 
