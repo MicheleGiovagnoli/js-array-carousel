@@ -23,6 +23,7 @@ GENERAL STYLES
  .container-img {
     height: 70vh;
     margin-top: 10vh;
+    position: relative;
  }
 
  /* image list */
@@ -51,6 +52,22 @@ GENERAL STYLES
 
  /*  */
 
- .btn {
+ .button {
    cursor: pointer;
+   background-color: bisque;
+   border-radius: 50%;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+ }
+
+ #btn-next{
+   right: 0px;
+ }
+ #btn-prev{
+   left: 0px;
  }

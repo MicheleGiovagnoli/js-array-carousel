@@ -16,7 +16,7 @@ let containerDinamicImage = "";
 
 //ciclo for per creare dinamicamente le immagini
 for(let i = 0; i < array.length; i++) {
-    const dinamicImage = `  <div class="image">
+    const dinamicImage = `  <div class="image d-none">
                                 <img class="img" src="${array[i]}" alt="img">
                             </div>`;
 
@@ -30,13 +30,40 @@ domImageList.innerHTML = containerDinamicImage;
 //aggiungo la classe d-none
 const domDinamicImage = document.getElementsByClassName('image');
 
+
 let counter = 0;
 
 domDinamicImage[counter].classList.add('d-block');
- for(let i = 1; counter < i; i++) {
-    domDinamicImage[counter].classList.add('d-none');
-    counter++;
- }
+
+
+domBtnNext = document.querySelector('#btn-next');
+domBtnPrev = document.querySelector('#btn-prev');
+
+domBtnNext.addEventListener('click',
+    function(){
+        
+        if (counter < domDinamicImage.length - 1) {
+            domDinamicImage[counter].classList.add('d-none');
+            domDinamicImage[counter].classList.remove('d-block');
+            counter++;
+            domDinamicImage[counter].classList.remove('d-none');
+        }
+    }
+ );
+
+ domBtnPrev.addEventListener('click',
+    function(){
+        
+        if(counter > 0) {
+            domDinamicImage[counter].classList.add('d-none');
+            counter--;
+            domDinamicImage[counter].classList.remove('d-none');
+        }
+    }
+ );
+
+
+
 
 
     
